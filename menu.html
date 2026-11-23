@@ -108,7 +108,6 @@ for (const k in LINKS) {
   document.getElementById(k).href = inKakao && /^https?:/.test(url)
     ? 'kakaotalk://web/openExternal?url=' + encodeURIComponent(url) : url;
 }
-// 부제목 한 줄 맞추기: 넘치면 폭에 맞게 글자를 줄인다(폰에서도 한 줄 — 사용자 결정)
 function fitSub() {
   const q = document.getElementById('sub');
   q.style.fontSize = '';
